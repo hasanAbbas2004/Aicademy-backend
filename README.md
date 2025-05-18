@@ -34,8 +34,9 @@ An intelligent learning assistant that provides 24/7 academic support for high s
 - OpenAI models for explanations/Q&A
 - Hugging Face embeddings for content analysis
 - FAISS vector database for efficient retrieval
-- Advanced RAG pipeline with LangChain/LangGraph
+- Advanced RAG pipeline with LangChain and huggingFace
 - Autonomous agents for specialized tasks
+- Agent orchestration with LangGraph
 
 **Backend:**
 - Django web framework
