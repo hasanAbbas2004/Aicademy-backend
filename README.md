@@ -1,65 +1,50 @@
-Source code isn't shared due to NDA restrictions
+# Aicademy: AI-Powered High School Tutoring System
 
+**An AI learning assistant that gives high school students round-the-clock help** with quizzes, personalized teaching sessions and study tools across six subjects.
 
-# Aicademy - AI-Powered High School Tutoring System
+> Source code is private under an NDA. This repository documents the project and my role in it.
 
 ![Private backend repository (code under NDA)](<Aicademy-Backend source.png>)
-*The private Django backend repository. Code is under NDA, so only this snapshot is shared.*
+*The private Django backend repository, shared as a snapshot because the code is under NDA.*
 
-## 🎯 Purpose
-An intelligent learning assistant that provides 24/7 academic support for high school students in:
-- English 📚
-- Mathematics ➗
-- Chemistry 🧪
-- Physics ⚛️
-- Computer Science 💻
-- Biology 🧬
+## My role: main AI engineer
 
-## ✨ Core Features
-1. **Smart Quiz System**
-   - Auto-generated practice quizzes
-   - Instant grading with detailed explanations
-   - Progress tracking
+This was a 3-person team project. I was the main AI engineer and owned the AI layer of the backend:
 
-2. **Personalized Teaching Sessions**
-   - Adaptive learning based on student performance
-   - Persistent memory of student weaknesses/preferences
-   - Targeted concept reinforcement
+- **RAG pipeline:** retrieval over course material with Hugging Face embeddings, a FAISS vector store and LangChain, so answers are grounded in the right content
+- **Agents:** specialized autonomous agents (quiz generation, teaching sessions, summarization, visual explanations) orchestrated with LangGraph
+- **Student memory:** persistent memory of each student's weak areas and preferences, used to adapt teaching sessions
+- **Visual learning pipeline:** a crawler that collects educational diagrams, AI captioning, and an agent that explains visual concepts
+- **LLM integration:** OpenAI models for explanations and Q&A, integrated into the Django backend
 
-3. **Comprehensive Study Tools**
-   - Automated flashcard generation
-   - Textbook chapter summarization
-   - Past exam paper database
-   - Visual learning with AI-generated diagrams
+## Subjects
 
-## 🛠️ Technical Implementation
-**AI Stack:**
-- OpenAI models for explanations/Q&A
-- Hugging Face embeddings for content analysis
-- FAISS vector database for efficient retrieval
-- Advanced RAG pipeline with LangChain and huggingFace
-- Autonomous agents for specialized tasks
-- Agent orchestration with LangGraph
+English 📚 · Mathematics ➗ · Chemistry 🧪 · Physics ⚛️ · Computer Science 💻 · Biology 🧬
 
-**Backend:**
-- Django web framework
-- Dockerized deployment on AWS
-- OpenAI API integration
-- Image processing pipeline:
-  - Web crawler for educational diagrams
-  - AI captioning system
-  - Explanatory agent for visual concepts
+## Features
 
-**Frontend:**
-*(Currently in development)*
+**Smart quiz system**
+- Auto-generated practice quizzes
+- Instant grading with detailed explanations
+- Progress tracking
 
-## 🚀 Getting Started
-```bash
-# make update
-# make run-server
-```
+**Personalized teaching sessions**
+- Adapts to each student's performance
+- Remembers weak areas and preferences between sessions
+- Targeted reinforcement of difficult concepts
 
-*API endpoints [<apps>/urls.py]*
+**Study tools**
+- Automated flashcard generation
+- Textbook chapter summaries
+- Past exam paper database
+- Visual learning with AI-generated diagrams
 
+## Tech stack
 
-
+| Area | Tools |
+|---|---|
+| LLMs | OpenAI models |
+| Retrieval | Hugging Face embeddings, FAISS, LangChain |
+| Agents | LangGraph |
+| Backend | Django |
+| Deployment | Docker on AWS |
