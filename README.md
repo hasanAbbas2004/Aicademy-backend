@@ -3,11 +3,14 @@ Source code isn't shared due to NDA restrictions
 
 # Aicademy - AI-Powered High School Tutoring System
 
+![Private backend repository (code under NDA)](<Aicademy-Backend source.png>)
+*The private Django backend repository. Code is under NDA, so only this snapshot is shared.*
+
 ## 🎯 Purpose
 An intelligent learning assistant that provides 24/7 academic support for high school students in:
 - English 📚
 - Mathematics ➗
-- Chemistry � 
+- Chemistry 🧪
 - Physics ⚛️
 - Computer Science 💻
 - Biology 🧬
